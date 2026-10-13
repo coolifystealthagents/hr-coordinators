@@ -1,0 +1,74 @@
+{
+  "blogs": [
+    {
+      "slug": "employee-onboarding-task-custody",
+      "title": "Keep Employee Onboarding Tasks Under Clear Custody"
+    },
+    {
+      "slug": "form-i9-administrative-handoff",
+      "title": "Design a Controlled Administrative Handoff for Form I-9"
+    },
+    {
+      "slug": "interview-schedule-change-log",
+      "title": "Build an Interview Schedule Change Log"
+    },
+    {
+      "slug": "policy-acknowledgment-version-control",
+      "title": "Put Policy Acknowledgments Under Version Control"
+    },
+    {
+      "slug": "training-completion-evidence-register",
+      "title": "Create a Training Completion Evidence Register"
+    },
+    {
+      "slug": "personnel-file-correction-history",
+      "title": "Preserve Correction History in Personnel Records"
+    },
+    {
+      "slug": "leave-request-routing-boundaries",
+      "title": "Set Boundaries for Administrative Leave Request Routing"
+    },
+    {
+      "slug": "accommodation-request-intake-routing",
+      "title": "Route Accommodation Requests Without Administrative Judgment"
+    },
+    {
+      "slug": "employee-offboarding-access-custody",
+      "title": "Document Access Custody During Employee Offboarding"
+    },
+    {
+      "slug": "hris-data-change-approval-workflow",
+      "title": "Build an Approval Workflow for HRIS Data Changes"
+    },
+    {
+      "slug": "candidate-communication-template-governance",
+      "title": "Govern Candidate Communication Templates"
+    },
+    {
+      "slug": "people-operations-metric-dictionary",
+      "title": "Create a People Operations Metric Dictionary"
+    }
+  ],
+  "research": [
+    {
+      "slug": "employee-onboarding-completion-measures",
+      "title": "Evidence-Based Employee Onboarding Completion Measures"
+    },
+    {
+      "slug": "interview-scheduling-cycle-analysis",
+      "title": "Methods for Analyzing Interview Scheduling Cycles"
+    },
+    {
+      "slug": "training-record-data-quality",
+      "title": "Data Quality Controls for Employee Training Records"
+    },
+    {
+      "slug": "policy-acknowledgment-evidence-methods",
+      "title": "Methods for Reviewing Policy Acknowledgment Evidence"
+    },
+    {
+      "slug": "personnel-record-access-review-evidence",
+      "title": "Evidence for Personnel Record Access Reviews"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "site": "HRCoordinators",
+  "domain": "hrcoordinators.com",
+  "canonicalOrigin": "https://hrcoordinators.com",
+  "repository": "coolifystealthagents/hr-coordinators",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "slug": "employee-onboarding-task-custody",
+      "title": "Keep Employee Onboarding Tasks Under Clear Custody",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/employee-onboarding-task-custody.webp"
+    },
+    {
+      "slug": "form-i9-administrative-handoff",
+      "title": "Design a Controlled Administrative Handoff for Form I-9",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/form-i9-administrative-handoff.webp"
+    },
+    {
+      "slug": "interview-schedule-change-log",
+      "title": "Build an Interview Schedule Change Log",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/interview-schedule-change-log.webp"
+    },
+    {
+      "slug": "policy-acknowledgment-version-control",
+      "title": "Put Policy Acknowledgments Under Version Control",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/policy-acknowledgment-version-control.webp"
+    },
+    {
+      "slug": "training-completion-evidence-register",
+      "title": "Create a Training Completion Evidence Register",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/training-completion-evidence-register.webp"
+    },
+    {
+      "slug": "personnel-file-correction-history",
+      "title": "Preserve Correction History in Personnel Records",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/personnel-file-correction-history.webp"
+    },
+    {
+      "slug": "leave-request-routing-boundaries",
+      "title": "Set Boundaries for Administrative Leave Request Routing",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/leave-request-routing-boundaries.webp"
+    },
+    {
+      "slug": "accommodation-request-intake-routing",
+      "title": "Route Accommodation Requests Without Administrative Judgment",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/accommodation-request-intake-routing.webp"
+    },
+    {
+      "slug": "employee-offboarding-access-custody",
+      "title": "Document Access Custody During Employee Offboarding",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/employee-offboarding-access-custody.webp"
+    },
+    {
+      "slug": "hris-data-change-approval-workflow",
+      "title": "Build an Approval Workflow for HRIS Data Changes",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/hris-data-change-approval-workflow.webp"
+    },
+    {
+      "slug": "candidate-communication-template-governance",
+      "title": "Govern Candidate Communication Templates",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/candidate-communication-template-governance.webp"
+    },
+    {
+      "slug": "people-operations-metric-dictionary",
+      "title": "Create a People Operations Metric Dictionary",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/people-operations-metric-dictionary.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "employee-onboarding-completion-measures",
+      "title": "Evidence-Based Employee Onboarding Completion Measures",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/employee-onboarding-completion-measures.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "interview-scheduling-cycle-analysis",
+      "title": "Methods for Analyzing Interview Scheduling Cycles",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/interview-scheduling-cycle-analysis.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "training-record-data-quality",
+      "title": "Data Quality Controls for Employee Training Records",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/training-record-data-quality.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "policy-acknowledgment-evidence-methods",
+      "title": "Methods for Reviewing Policy Acknowledgment Evidence",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/policy-acknowledgment-evidence-methods.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "personnel-record-access-review-evidence",
+      "title": "Evidence for Personnel Record Access Reviews",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/personnel-record-access-review-evidence.webp",
+      "sourceCount": 10
+    }
+  ]
+}
