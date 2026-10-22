@@ -120,9 +120,9 @@ const legacyBlogPosts: BlogPost[] = [
         ]
       },
       {
-        "heading": "What interview scheduling can handle",
+        "heading": "What onboarding coordination can handle",
         "paragraphs": [
-          "Handle calendar coordination and candidate logistics. The role can prepare records, maintain approved statuses, coordinate routine communication, and surface exceptions for the right owner.",
+          "Maintain approved onboarding checklists, prepare welcome materials, track required acknowledgments, coordinate routine communication, and surface missing inputs for the right owner.",
           "The assistant should never be asked to invent policy, make a licensed decision, or hide uncertainty. When a request falls outside the documented path, escalation is the work."
         ]
       },
@@ -473,11 +473,11 @@ const legacyBlogPosts: BlogPost[] = [
 const legacyResearchPosts: ResearchPost[] = [
   {
     "slug": "employee-onboarding-support-workflow-boundary-review-1",
-    "title": "Employee onboarding support: workflow boundary review",
+    "title": "Employee onboarding workflow boundary review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee onboarding support workflows.",
     "cluster": "Employee onboarding",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -495,11 +495,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "interview-scheduling-source-quality-audit-2",
-    "title": "Interview scheduling: source quality audit",
+    "title": "Interview scheduling source review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve interview scheduling workflows.",
     "cluster": "HR records",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -517,11 +517,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-records-exception-pattern-study-3",
-    "title": "Employee records support: exception pattern study",
+    "title": "Employee records exception review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee records support workflows.",
     "cluster": "People operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -539,11 +539,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "training-administration-handoff-reliability-brief-4",
-    "title": "Training administration: handoff reliability brief",
+    "title": "Training administration handoff review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve training administration workflows.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -561,11 +561,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "policy-acknowledgments-review-consistency-report-5",
-    "title": "Policy acknowledgment support: review consistency report",
+    "title": "Policy acknowledgment consistency review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve policy acknowledgment support workflows.",
     "cluster": "Employee onboarding",
     "publishedAt": "2026-10-05",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -583,11 +583,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "people-operations-reporting-workflow-boundary-review-6",
-    "title": "People operations reporting: workflow boundary review",
+    "title": "People operations reporting boundary review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve people operations reporting workflows.",
     "cluster": "HR records",
     "publishedAt": "2026-10-06",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -605,11 +605,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-onboarding-support-source-quality-audit-7",
-    "title": "Employee onboarding support: source quality audit",
+    "title": "Employee onboarding source review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee onboarding support workflows.",
     "cluster": "People operations",
     "publishedAt": "2026-10-07",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -627,11 +627,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "interview-scheduling-exception-pattern-study-8",
-    "title": "Interview scheduling: exception pattern study",
+    "title": "Interview scheduling exception review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve interview scheduling workflows.",
     "cluster": "Role design",
     "publishedAt": "2026-10-08",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -649,11 +649,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-records-handoff-reliability-brief-9",
-    "title": "Employee records support: handoff reliability brief",
+    "title": "Employee records handoff review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee records support workflows.",
     "cluster": "Employee onboarding",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -671,11 +671,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "training-administration-review-consistency-report-10",
-    "title": "Training administration: review consistency report",
+    "title": "Training administration consistency review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve training administration workflows.",
     "cluster": "HR records",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -693,11 +693,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "policy-acknowledgments-workflow-boundary-review-11",
-    "title": "Policy acknowledgment support: workflow boundary review",
+    "title": "Policy acknowledgment boundary review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve policy acknowledgment support workflows.",
     "cluster": "People operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -715,11 +715,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "people-operations-reporting-source-quality-audit-12",
-    "title": "People operations reporting: source quality audit",
+    "title": "People operations reporting source review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve people operations reporting workflows.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -737,11 +737,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-onboarding-support-exception-pattern-study-13",
-    "title": "Employee onboarding support: exception pattern study",
+    "title": "Employee onboarding exception review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee onboarding support workflows.",
     "cluster": "Employee onboarding",
     "publishedAt": "2026-10-05",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -759,11 +759,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "interview-scheduling-handoff-reliability-brief-14",
-    "title": "Interview scheduling: handoff reliability brief",
+    "title": "Interview scheduling handoff review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve interview scheduling workflows.",
     "cluster": "HR records",
     "publishedAt": "2026-10-06",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -781,11 +781,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-records-review-consistency-report-15",
-    "title": "Employee records support: review consistency report",
+    "title": "Employee records consistency review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee records support workflows.",
     "cluster": "People operations",
     "publishedAt": "2026-10-07",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -803,11 +803,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "training-administration-workflow-boundary-review-16",
-    "title": "Training administration: workflow boundary review",
+    "title": "Training administration boundary review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve training administration workflows.",
     "cluster": "Role design",
     "publishedAt": "2026-10-08",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -825,11 +825,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "policy-acknowledgments-source-quality-audit-17",
-    "title": "Policy acknowledgment support: source quality audit",
+    "title": "Policy acknowledgment source review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve policy acknowledgment support workflows.",
     "cluster": "Employee onboarding",
     "publishedAt": "2026-10-01",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -847,11 +847,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "people-operations-reporting-exception-pattern-study-18",
-    "title": "People operations reporting: exception pattern study",
+    "title": "People operations reporting exception review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve people operations reporting workflows.",
     "cluster": "HR records",
     "publishedAt": "2026-10-02",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -869,11 +869,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "employee-onboarding-support-handoff-reliability-brief-19",
-    "title": "Employee onboarding support: handoff reliability brief",
+    "title": "Employee onboarding handoff review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve employee onboarding support workflows.",
     "cluster": "People operations",
     "publishedAt": "2026-10-03",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -891,11 +891,11 @@ const legacyResearchPosts: ResearchPost[] = [
   },
   {
     "slug": "interview-scheduling-review-consistency-report-20",
-    "title": "Interview scheduling: review consistency report",
+    "title": "Interview scheduling consistency review plan",
     "summary": "A source-led brief on how HR leaders, people operations teams, and growing companies can define, inspect, and improve interview scheduling workflows.",
     "cluster": "Role design",
     "publishedAt": "2026-10-04",
-    "finding": "The most useful control is a visible boundary between routine preparation and accountable judgment, supported by source records and explicit escalation.",
+    "finding": "Begin with source records, named owners, acceptance checks, and explicit escalation before changing the workflow.",
     "sources": [
       {
         "label": "United States Department of Labor",
@@ -917,11 +917,9 @@ export const blogPosts: BlogPost[] = [...october12BlogPosts, ...legacyBlogPosts]
 export const researchPosts: ResearchPost[] = [...october12ResearchPosts, ...legacyResearchPosts];
 
 export const nav = [
+  { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/research', label: 'Research' },
-  { href: '/contact-us', label: 'Contact' }
+  { href: '/contact-us', label: 'Contact Us' }
 ];
 
 export function serviceBySlug(slug: string) { return site.services.find((service) => service.slug === slug); }

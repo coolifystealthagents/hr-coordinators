@@ -25,6 +25,8 @@ export const site: SiteConfig = {
       "slug": "employee-onboarding-support",
       "name": "Employee onboarding support",
       "short": "Coordinate approved tasks, records, and reminders for new hires.",
+      "heroImage": "/thumbnails/october-12/employee-onboarding-task-custody.webp",
+      "heroAlt": "Illustrated onboarding task handoff with calendar and document cues",
       "tasks": [
         "Prepare onboarding checklists",
         "Maintain task ownership",
@@ -36,6 +38,8 @@ export const site: SiteConfig = {
       "slug": "interview-scheduling",
       "name": "Interview scheduling",
       "short": "Handle calendar coordination and candidate logistics.",
+      "heroImage": "/thumbnails/october-12/interview-scheduling-cycle-analysis.webp",
+      "heroAlt": "Illustrated interview calendar and scheduling workflow",
       "tasks": [
         "Coordinate calendars",
         "Prepare interview records",
@@ -47,6 +51,8 @@ export const site: SiteConfig = {
       "slug": "employee-records",
       "name": "Employee records support",
       "short": "Maintain approved personnel records with clear privacy boundaries.",
+      "heroImage": "/thumbnails/october-12/personnel-file-correction-history.webp",
+      "heroAlt": "Illustrated personnel file review and correction workflow",
       "tasks": [
         "Update approved fields",
         "Check record completeness",
@@ -58,6 +64,8 @@ export const site: SiteConfig = {
       "slug": "training-administration",
       "name": "Training administration",
       "short": "Organize enrollments, completion records, and approved reminders.",
+      "heroImage": "/thumbnails/october-12/training-record-data-quality.webp",
+      "heroAlt": "Illustrated training records and completion calendar",
       "tasks": [
         "Maintain training calendars",
         "Track completion status",
@@ -69,6 +77,8 @@ export const site: SiteConfig = {
       "slug": "policy-acknowledgments",
       "name": "Policy acknowledgment support",
       "short": "Maintain visible records of approved policy distribution and receipt.",
+      "heroImage": "/thumbnails/october-12/policy-acknowledgment-version-control.webp",
+      "heroAlt": "Illustrated policy version and acknowledgment records",
       "tasks": [
         "Prepare distribution lists",
         "Track acknowledgment status",
@@ -80,6 +90,8 @@ export const site: SiteConfig = {
       "slug": "people-operations-reporting",
       "name": "People operations reporting",
       "short": "Prepare consistent operational views for HR leaders.",
+      "heroImage": "/thumbnails/october-12/people-operations-metric-dictionary.webp",
+      "heroAlt": "Illustrated people operations reporting workspace",
       "tasks": [
         "Compile approved data",
         "Check source completeness",
@@ -95,7 +107,7 @@ export const site: SiteConfig = {
     "Role design"
   ],
   "principles": [
-    "Top 1 percent selectivity",
+    "Role-aware matching",
     "Clear role boundaries",
     "Reviewable workflows"
   ],
