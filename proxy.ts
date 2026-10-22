@@ -7,7 +7,7 @@ export function proxy(request: NextRequest) {
   const forwardedProtocol = request.headers.get('x-forwarded-proto')?.split(',', 1)[0]?.trim().toLowerCase();
   const cloudflareProtocol = cloudflareVisitor.match(/"scheme"\s*:\s*"(https?)"/i)?.[1]?.toLowerCase();
   const visitorProtocol = cloudflareProtocol ?? forwardedProtocol;
-  const requestHost = request.headers.get('host')?.split(':', 1)[0]?.toLowerCase();
+  const requestHost = request.headers.get('host')?.split(':', 1)[0]?.trim().toLowerCase();
   const isProductionHost = requestHost === 'hrcoordinators.com' || requestHost === 'www.hrcoordinators.com';
   const needsCanonicalRedirect = isProductionHost && (requestHost === 'www.hrcoordinators.com' || visitorProtocol === 'http');
 

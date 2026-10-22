@@ -185,8 +185,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/hr-record-review",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "USCIS Form I-9 Central",
+      "url": "https://www.uscis.gov/i-9-central"
     }
   },
   {
@@ -279,8 +279,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/interview-scheduling",
     "internalSibling": "/blog/candidate-communication-template-governance",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "EEOC Prohibited Employment Policies and Practices",
+      "url": "https://www.eeoc.gov/prohibited-employment-policiespractices"
     }
   },
   {
@@ -373,8 +373,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/policy-acknowledgments",
     "internalSibling": "/blog/policy-acknowledgment-tracking",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "NIST Security and Privacy Controls",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
     }
   },
   {
@@ -467,8 +467,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/training-administration",
     "internalSibling": "/blog/training-administration-queue",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "OSHA Training Requirements and Resources",
+      "url": "https://www.osha.gov/training"
     }
   },
   {
@@ -561,8 +561,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/hr-record-review",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "EEOC Recordkeeping Requirements",
+      "url": "https://www.eeoc.gov/employers/recordkeeping-requirements"
     }
   },
   {
@@ -655,8 +655,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "U.S. Department of Labor FMLA Guidance",
+      "url": "https://www.dol.gov/agencies/whd/fmla"
     }
   },
   {
@@ -749,8 +749,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "EEOC Reasonable Accommodation Guidance",
+      "url": "https://www.eeoc.gov/laws/guidance/enforcement-guidance-reasonable-accommodation-and-undue-hardship-under-ada"
     }
   },
   {
@@ -843,8 +843,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "NIST Security and Privacy Controls",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
     }
   },
   {
@@ -937,8 +937,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/employee-records",
     "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
     }
   },
   {
@@ -1031,8 +1031,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/interview-scheduling",
     "internalSibling": "/blog/interview-schedule-change-log",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "EEOC Prohibited Employment Policies and Practices",
+      "url": "https://www.eeoc.gov/prohibited-employment-policiespractices"
     }
   },
   {
@@ -1125,8 +1125,8 @@ export const october12BlogPosts: BlogPost[] = [
     "internalService": "/services/people-operations-reporting",
     "internalSibling": "/blog/employee-onboarding-task-custody",
     "source": {
-      "label": "U.S. Department of Labor Employment Law Guide",
-      "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
+      "label": "U.S. Bureau of Labor Statistics Handbook of Methods",
+      "url": "https://www.bls.gov/opub/hom/"
     }
   }
 ];

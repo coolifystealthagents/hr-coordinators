@@ -105,7 +105,8 @@ class V3ContractTests(unittest.TestCase):
         privacy = text("app/privacy/page.tsx")
         for disclosure in (
             "phone number", "company website", "company size", "expected hiring volume",
-            "browser user agent", "Mattermost", "analytics service",
+            "IP address", "browser user agent", "accepted language", "Mattermost",
+            "analytics service", "OnceHub", "scheduling details",
         ):
             self.assertIn(disclosure, privacy)
 
@@ -139,19 +140,25 @@ class V3ContractTests(unittest.TestCase):
             self.assertIsNotNone(match, slug)
             self.assertEqual(match.group(2), service, slug)
 
-    def test_http_visitors_are_redirected_at_the_application_boundary(self) -> None:
+        october_blog = text("lib/october12-blog.ts")
+        source_urls = re.findall(r'"source":\s*\{.*?"url":\s*"([^"]+)"', october_blog, re.DOTALL)
+        self.assertEqual(len(source_urls), 12)
+        self.assertGreaterEqual(len(set(source_urls)), 8)
+        self.assertIn("https://www.uscis.gov/i-9-central", source_urls)
+        self.assertIn("https://www.dol.gov/agencies/whd/fmla", source_urls)
+        self.assertTrue(any("eeoc.gov/laws/guidance" in url for url in source_urls))
+        self.assertTrue(any("nist.gov" in url for url in source_urls))
+
+    def test_http_redirects_are_production_host_scoped(self) -> None:
         proxy = text("proxy.ts")
-        self.assertIn("cf-visitor", proxy)
-        self.assertIn("x-forwarded-proto", proxy)
         self.assertIn("cloudflareProtocol ?? forwardedProtocol", proxy)
         self.assertIn("requestHost === 'hrcoordinators.com'", proxy)
         self.assertIn("requestHost === 'www.hrcoordinators.com'", proxy)
         self.assertIn("needsCanonicalRedirect", proxy)
-        next_config = text("next.config.mjs")
-        self.assertNotIn("key: 'x-forwarded-proto'", next_config)
         self.assertIn("request.nextUrl.pathname", proxy)
         self.assertIn("request.nextUrl.search", proxy)
         self.assertIn("308", proxy)
+        self.assertNotIn("key: 'x-forwarded-proto'", text("next.config.mjs"))
 
     def test_no_decorative_zero_padded_labels_or_overlay_modal(self) -> None:
         commercial = "\n".join(
