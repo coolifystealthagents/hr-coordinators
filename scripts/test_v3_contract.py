@@ -106,7 +106,8 @@ class V3ContractTests(unittest.TestCase):
         for disclosure in (
             "phone number", "company website", "company size", "expected hiring volume",
             "IP address", "browser user agent", "accepted language", "Mattermost",
-            "analytics service", "OnceHub", "scheduling details",
+            "analytics service", "Form information is sent", "lead activity",
+            "OnceHub", "when that page loads", "scheduling details",
         ):
             self.assertIn(disclosure, privacy)
 
