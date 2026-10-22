@@ -147,6 +147,8 @@ class V3ContractTests(unittest.TestCase):
         self.assertIn("requestHost === 'hrcoordinators.com'", proxy)
         self.assertIn("requestHost === 'www.hrcoordinators.com'", proxy)
         self.assertIn("needsCanonicalRedirect", proxy)
+        next_config = text("next.config.mjs")
+        self.assertNotIn("key: 'x-forwarded-proto'", next_config)
         self.assertIn("request.nextUrl.pathname", proxy)
         self.assertIn("request.nextUrl.search", proxy)
         self.assertIn("308", proxy)
