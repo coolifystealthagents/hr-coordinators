@@ -47,7 +47,7 @@ export function Header() {
 
 export function Footer() {
   return <footer>
-    <div className="footer-brand"><Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={48} height={48}/><span>{site.name}</span></Link><p>Careful coordination for the recurring work around your people.</p><div className="parent-mark"><Image src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={132} height={34} loading="eager"/><strong>Powered by StealthAgents</strong></div></div>
+    <div className="footer-brand"><Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={48} height={48}/><span>{site.name}</span></Link><p>Careful coordination for the recurring work around your people.</p><div className="parent-mark"><Image src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={132} height={34}/><strong>Powered by StealthAgents</strong></div></div>
     <div><h2>Explore</h2><nav className="footer-links" aria-label="Footer navigation">{nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/about">About</Link><Link href="/blog">Blog</Link><Link href="/research">Research</Link></nav></div>
     <div><h2>Policies</h2><nav className="footer-links" aria-label="Policy navigation"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></nav></div>
     <p className="copyright">© {new Date().getFullYear()} {site.name}</p>
