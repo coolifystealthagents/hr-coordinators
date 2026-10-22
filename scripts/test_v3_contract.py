@@ -139,6 +139,22 @@ class V3ContractTests(unittest.TestCase):
             self.assertIsNotNone(match, slug)
             self.assertEqual(match.group(2), service, slug)
 
+    def test_http_visitors_are_redirected_at_the_application_boundary(self) -> None:
+        proxy = text("proxy.ts")
+        self.assertIn("cf-visitor", proxy)
+        self.assertIn("x-forwarded-proto", proxy)
+        self.assertIn("cloudflareProtocol ?? forwardedProtocol", proxy)
+        self.assertIn("requestHost === 'hrcoordinators.com'", proxy)
+        self.assertIn("requestHost === 'www.hrcoordinators.com'", proxy)
+        self.assertIn("https://hrcoordinators.com", proxy)
+        self.assertIn("request.headers.get('host')", proxy)
+        self.assertIn("requestedHost === 'hrcoordinators.com'", proxy)
+        self.assertIn("requestedHost === 'www.hrcoordinators.com'", proxy)
+        self.assertIn("!isProductionHost || !isHttpVisitor", proxy)
+        self.assertIn("request.nextUrl.pathname", proxy)
+        self.assertIn("request.nextUrl.search", proxy)
+        self.assertIn("308", proxy)
+
     def test_no_decorative_zero_padded_labels_or_overlay_modal(self) -> None:
         commercial = "\n".join(
             text(path)
