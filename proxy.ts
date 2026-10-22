@@ -12,8 +12,6 @@ export function proxy(request: NextRequest) {
   const needsCanonicalRedirect = isProductionHost && (requestHost === 'www.hrcoordinators.com' || visitorProtocol === 'http');
 
   if (!needsCanonicalRedirect) {
-
-  if (!isProductionHost || !isHttpVisitor) {
     return NextResponse.next();
   }
 
