@@ -1,6 +1,6 @@
 import type { ResearchPost } from './types';
 
-export const october12ResearchPosts: ResearchPost[] = [
+const rawOctober12ResearchPosts: ResearchPost[] = [
   {
     "slug": "employee-onboarding-completion-measures",
     "title": "Evidence-Based Employee Onboarding Completion Measures",
@@ -9,7 +9,7 @@ export const october12ResearchPosts: ResearchPost[] = [
     "publishedAt": "2026-10-12",
     "finding": "Transparent onboarding completion measures requires declared populations, authoritative sources, explicit exclusions, protected decision boundaries, and traceable corrections.",
     "thumbnail": "/thumbnails/october-12/employee-onboarding-completion-measures.webp",
-    "methodology": "We reviewed ten authoritative public sources for definitions and control principles, retained each source's original scope, and translated recurring themes into an administrative measurement framework. All links were verified on 2026-10-12.",
+    "methodology": "This editorial synthesis uses the public references listed below as context for operational controls. Each source retains its original scope, and the brief does not treat a reference as proof of an employment, legal, or performance outcome.",
     "sections": [
       {
         "heading": "Research scope",
@@ -161,7 +161,7 @@ export const october12ResearchPosts: ResearchPost[] = [
     "publishedAt": "2026-10-12",
     "finding": "Transparent interview scheduling cycle analysis requires declared populations, authoritative sources, explicit exclusions, protected decision boundaries, and traceable corrections.",
     "thumbnail": "/thumbnails/october-12/interview-scheduling-cycle-analysis.webp",
-    "methodology": "We reviewed ten authoritative public sources for definitions and control principles, retained each source's original scope, and translated recurring themes into an administrative measurement framework. All links were verified on 2026-10-12.",
+    "methodology": "This editorial synthesis uses the public references listed below as context for operational controls. Each source retains its original scope, and the brief does not treat a reference as proof of an employment, legal, or performance outcome.",
     "sections": [
       {
         "heading": "Research scope",
@@ -313,7 +313,7 @@ export const october12ResearchPosts: ResearchPost[] = [
     "publishedAt": "2026-10-12",
     "finding": "Transparent training record data quality requires declared populations, authoritative sources, explicit exclusions, protected decision boundaries, and traceable corrections.",
     "thumbnail": "/thumbnails/october-12/training-record-data-quality.webp",
-    "methodology": "We reviewed ten authoritative public sources for definitions and control principles, retained each source's original scope, and translated recurring themes into an administrative measurement framework. All links were verified on 2026-10-12.",
+    "methodology": "This editorial synthesis uses the public references listed below as context for operational controls. Each source retains its original scope, and the brief does not treat a reference as proof of an employment, legal, or performance outcome.",
     "sections": [
       {
         "heading": "Research scope",
@@ -465,7 +465,7 @@ export const october12ResearchPosts: ResearchPost[] = [
     "publishedAt": "2026-10-12",
     "finding": "Transparent policy acknowledgment evidence requires declared populations, authoritative sources, explicit exclusions, protected decision boundaries, and traceable corrections.",
     "thumbnail": "/thumbnails/october-12/policy-acknowledgment-evidence-methods.webp",
-    "methodology": "We reviewed ten authoritative public sources for definitions and control principles, retained each source's original scope, and translated recurring themes into an administrative measurement framework. All links were verified on 2026-10-12.",
+    "methodology": "This editorial synthesis uses the public references listed below as context for operational controls. Each source retains its original scope, and the brief does not treat a reference as proof of an employment, legal, or performance outcome.",
     "sections": [
       {
         "heading": "Research scope",
@@ -617,7 +617,7 @@ export const october12ResearchPosts: ResearchPost[] = [
     "publishedAt": "2026-10-12",
     "finding": "Transparent personnel record access reviews requires declared populations, authoritative sources, explicit exclusions, protected decision boundaries, and traceable corrections.",
     "thumbnail": "/thumbnails/october-12/personnel-record-access-review-evidence.webp",
-    "methodology": "We reviewed ten authoritative public sources for definitions and control principles, retained each source's original scope, and translated recurring themes into an administrative measurement framework. All links were verified on 2026-10-12.",
+    "methodology": "This editorial synthesis uses the public references listed below as context for operational controls. Each source retains its original scope, and the brief does not treat a reference as proof of an employment, legal, or performance outcome.",
     "sections": [
       {
         "heading": "Research scope",
@@ -762,3 +762,52 @@ export const october12ResearchPosts: ResearchPost[] = [
     ]
   }
 ];
+
+const relevantSourceLabels: Record<string, string[]> = {
+  'employee-onboarding-completion-measures': [
+    'U.S. Department of Labor Employment Law Guide',
+    'EEOC Recordkeeping Requirements',
+    'EEOC Disability Discrimination',
+    'EEOC Religious Discrimination',
+    'USCIS Form I-9 Central',
+    'USCIS Retaining Form I-9',
+    'NIST Privacy Framework',
+    'NIST Cybersecurity Framework',
+  ],
+  'interview-scheduling-cycle-analysis': [
+    'EEOC Recordkeeping Requirements',
+    'EEOC Disability Discrimination',
+    'EEOC Religious Discrimination',
+    'NIST Privacy Framework',
+    'NIST Cybersecurity Framework',
+  ],
+  'training-record-data-quality': [
+    'NIST Privacy Framework',
+    'NIST Cybersecurity Framework',
+    'CISA Identity and Access Management',
+    'OSHA Recommended Practices for Safety and Health Programs',
+    'Federal Trade Commission Protecting Personal Information',
+    'Office of Personnel Management Training and Development',
+  ],
+  'policy-acknowledgment-evidence-methods': [
+    'NIST Privacy Framework',
+    'NIST Cybersecurity Framework',
+    'CISA Identity and Access Management',
+    'Federal Trade Commission Protecting Personal Information',
+    'U.S. Department of Labor Employment Law Guide',
+  ],
+  'personnel-record-access-review-evidence': [
+    'NIST Privacy Framework',
+    'NIST Cybersecurity Framework',
+    'CISA Identity and Access Management',
+    'Federal Trade Commission Protecting Personal Information',
+    'U.S. Department of Labor Recordkeeping',
+    'EEOC Recordkeeping Requirements',
+    'EEOC Disability Discrimination',
+  ],
+};
+
+export const october12ResearchPosts: ResearchPost[] = rawOctober12ResearchPosts.map((post) => {
+  const labels = new Set(relevantSourceLabels[post.slug] || []);
+  return { ...post, sources: post.sources.filter((source) => labels.has(source.label)) };
+});

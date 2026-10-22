@@ -8,8 +8,21 @@ import { site } from '@/lib/site';
 import type { ResearchPost } from '@/lib/types';
 
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-const fallbackImages = site.services.map((service) => service.heroImage);
 type Section = { heading: string; paragraphs: string[] };
+
+function topicKey(post: ResearchPost) {
+  return post.slug.includes('interview-scheduling') ? 'interviews'
+    : post.slug.includes('employee-records') || post.slug.includes('personnel-record') ? 'records'
+      : post.slug.includes('training') ? 'training'
+        : post.slug.includes('policy-acknowledgment') ? 'policies'
+          : post.slug.includes('people-operations') ? 'reporting'
+            : 'onboarding';
+}
+
+function topicImage(post: ResearchPost) {
+  const serviceSlug = { onboarding: 'employee-onboarding-support', interviews: 'interview-scheduling', records: 'employee-records', training: 'training-administration', policies: 'policy-acknowledgments', reporting: 'people-operations-reporting' }[topicKey(post)];
+  return site.services.find((service) => service.slug === serviceSlug)?.heroImage || site.heroImage;
+}
 
 const topicSections: Record<string, Section[]> = {
   onboarding: [
@@ -68,12 +81,7 @@ const lensSections: Record<string, Section[]> = {
 };
 
 function reviewPlanSections(post: ResearchPost): Section[] {
-  const topic = post.slug.includes('interview-scheduling') ? 'interviews'
-    : post.slug.includes('employee-records') ? 'records'
-      : post.slug.includes('training-administration') ? 'training'
-        : post.slug.includes('policy-acknowledgments') ? 'policies'
-          : post.slug.includes('people-operations-reporting') ? 'reporting'
-            : 'onboarding';
+  const topic = topicKey(post);
   const lens = post.slug.includes('source-quality') ? 'source'
     : post.slug.includes('exception-pattern') ? 'exceptions'
       : post.slug.includes('handoff-reliability') ? 'handoff'
@@ -95,7 +103,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: isReviewPlan ? `${post.title}. A practical plan for reviewing sources, ownership, acceptance checks, and escalation.` : `Research brief: ${post.title}. Findings for HR leaders defining source quality, review ownership, and escalation.`,
     alternates: { canonical: `/research/${post.slug}` },
-    openGraph: { images: [post.thumbnail || fallbackImages[researchPosts.findIndex((item) => item.slug === post.slug) % fallbackImages.length]] },
+    openGraph: { images: [post.thumbnail || topicImage(post)] },
   };
 }
 
@@ -105,7 +113,7 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   if (!post) notFound();
   const isReviewPlan = !post.sections?.length;
   const related = researchPosts.filter((item) => item.slug !== post.slug && item.cluster === post.cluster).slice(0, 3);
-  const image = post.thumbnail || fallbackImages[researchPosts.findIndex((item) => item.slug === post.slug) % fallbackImages.length];
+  const image = post.thumbnail || topicImage(post);
   const bodySections = post.sections?.length ? post.sections : reviewPlanSections(post);
   const toc = [
     ...bodySections.map((section) => ({ id: slugify(section.heading), label: section.heading })),

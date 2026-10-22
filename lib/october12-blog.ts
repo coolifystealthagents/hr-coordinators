@@ -89,7 +89,7 @@ export const october12BlogPosts: BlogPost[] = [
       }
     ],
     "internalService": "/services/employee-onboarding-support",
-    "internalSibling": "/blog/form-i9-administrative-handoff",
+    "internalSibling": "/blog/employee-onboarding-map",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -182,8 +182,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/interview-scheduling",
-    "internalSibling": "/blog/interview-schedule-change-log",
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/hr-record-review",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -276,8 +276,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/employee-records",
-    "internalSibling": "/blog/policy-acknowledgment-version-control",
+    "internalService": "/services/interview-scheduling",
+    "internalSibling": "/blog/candidate-communication-template-governance",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -370,8 +370,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/training-administration",
-    "internalSibling": "/blog/training-completion-evidence-register",
+    "internalService": "/services/policy-acknowledgments",
+    "internalSibling": "/blog/policy-acknowledgment-tracking",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -464,8 +464,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/policy-acknowledgments",
-    "internalSibling": "/blog/personnel-file-correction-history",
+    "internalService": "/services/training-administration",
+    "internalSibling": "/blog/training-administration-queue",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -558,8 +558,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/people-operations-reporting",
-    "internalSibling": "/blog/leave-request-routing-boundaries",
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/hr-record-review",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -652,8 +652,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/employee-onboarding-support",
-    "internalSibling": "/blog/accommodation-request-intake-routing",
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -746,8 +746,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/interview-scheduling",
-    "internalSibling": "/blog/employee-offboarding-access-custody",
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -841,7 +841,7 @@ export const october12BlogPosts: BlogPost[] = [
       }
     ],
     "internalService": "/services/employee-records",
-    "internalSibling": "/blog/hris-data-change-approval-workflow",
+    "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -934,8 +934,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/training-administration",
-    "internalSibling": "/blog/candidate-communication-template-governance",
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/personnel-file-correction-history",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"
@@ -1028,8 +1028,8 @@ export const october12BlogPosts: BlogPost[] = [
         "a": "Use a documented sample, compare records with named sources, and assign recurring exceptions to a process owner."
       }
     ],
-    "internalService": "/services/policy-acknowledgments",
-    "internalSibling": "/blog/people-operations-metric-dictionary",
+    "internalService": "/services/interview-scheduling",
+    "internalSibling": "/blog/interview-schedule-change-log",
     "source": {
       "label": "U.S. Department of Labor Employment Law Guide",
       "url": "https://www.dol.gov/agencies/whd/compliance-assistance/guide"

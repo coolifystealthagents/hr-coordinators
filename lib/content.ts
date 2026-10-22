@@ -183,8 +183,8 @@ const legacyBlogPosts: BlogPost[] = [
         "a": "Review a focused sample against a short acceptance checklist, then update the process when patterns appear."
       }
     ],
-    "internalService": "/services/interview-scheduling",
-    "internalSibling": "/blog/hr-record-review",
+    "internalService": "/services/employee-onboarding-support",
+    "internalSibling": "/blog/employee-onboarding-task-custody",
     "source": {
       "label": "United States Department of Labor",
       "url": "https://www.dol.gov/general/topic/hiring"

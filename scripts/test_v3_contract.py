@@ -50,7 +50,9 @@ class V3ContractTests(unittest.TestCase):
         self.assertIn("stealth-agents-logo", contact)
         self.assertIn("Official team, Bacolod", contact)
         self.assertLess(contact.index("<LeadForm"), contact.index("Official team, Bacolod"))
-        self.assertIn("https://go.oncehub.com/StealthAgentsTeam", text("app/thank-you/page.tsx"))
+        thank_you = text("app/thank-you/page.tsx")
+        self.assertIn('src="https://go.oncehub.com/StealthAgentsTeam"', thank_you)
+        self.assertNotIn("StealthAgentsTeam?", thank_you)
         self.assertIn("You are booked", text("app/thanks-whats-next/page.tsx"))
         self.assertIn("router.push('/thank-you')", text("components/LeadForm.tsx"))
 
@@ -94,6 +96,48 @@ class V3ContractTests(unittest.TestCase):
         metadata = privacy.split("export default", 1)[0]
         self.assertNotIn("protects", metadata)
         self.assertNotIn("retains", metadata)
+
+    def test_skip_link_privacy_and_topic_routing_are_complete(self) -> None:
+        layout = text("app/layout.tsx")
+        self.assertIn('href="#page-content"', layout)
+        self.assertIn('id="page-content"', layout)
+
+        privacy = text("app/privacy/page.tsx")
+        for disclosure in (
+            "phone number", "company website", "company size", "expected hiring volume",
+            "browser user agent", "Mattermost", "analytics service",
+        ):
+            self.assertIn(disclosure, privacy)
+
+        research = text("app/research/[slug]/page.tsx")
+        self.assertIn("function topicImage", research)
+        self.assertIn("post.thumbnail || topicImage(post)", research)
+        self.assertNotIn("researchPosts.findIndex", research)
+
+        october_research = text("lib/october12-research.ts")
+        self.assertIn("relevantSourceLabels", october_research)
+        self.assertIn("post.sources.filter", october_research)
+        self.assertNotIn("We reviewed ten authoritative public sources", october_research)
+
+        blog_sources = text("lib/content.ts") + text("lib/october12-blog.ts")
+        expected_links = {
+            "employee-onboarding-map": "/services/employee-onboarding-support",
+            "form-i9-administrative-handoff": "/services/employee-records",
+            "interview-schedule-change-log": "/services/interview-scheduling",
+            "policy-acknowledgment-version-control": "/services/policy-acknowledgments",
+            "training-completion-evidence-register": "/services/training-administration",
+            "personnel-file-correction-history": "/services/employee-records",
+            "candidate-communication-template-governance": "/services/interview-scheduling",
+            "people-operations-metric-dictionary": "/services/people-operations-reporting",
+        }
+        for slug, service in expected_links.items():
+            match = re.search(
+                rf'["\']slug["\']:\s*["\']{re.escape(slug)}["\'](.*?)["\']internalService["\']:\s*["\']([^"\']+)',
+                blog_sources,
+                re.DOTALL,
+            )
+            self.assertIsNotNone(match, slug)
+            self.assertEqual(match.group(2), service, slug)
 
     def test_no_decorative_zero_padded_labels_or_overlay_modal(self) -> None:
         commercial = "\n".join(
