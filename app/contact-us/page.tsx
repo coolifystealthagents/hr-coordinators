@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LeadForm } from '@/components/LeadForm';
+import { PageHero } from '@/components/PageHero';
 import { site } from '@/lib/site';
 import reviewData from '../review-provenance.json';
 import './contact.css';
@@ -10,7 +11,8 @@ export const metadata: Metadata = { title: 'Contact Us | HR Coordinator Staffing
 
 export default function ContactPage() {
   return <main id="main-content" className="contact-page">
-    <section className="contact-fold"><div className="contact-intro"><p className="eyebrow">Contact Us</p><h1>Bring order to the HR queue that keeps pulling you back in.</h1><p>Tell us which recurring workflow needs clearer coordination. We will discuss the inputs, access, review owner, and decision boundaries before shaping a role.</p><div className="scope-labels"><span>Focused role design</span><span>Human review</span><span>Clear escalation</span></div><div className="review-heading"><strong>StealthAgents reviews</strong><span>First-party StealthAgents client comments</span></div><div className="review-window" aria-label="StealthAgents client comments" tabIndex={0}><div className="review-track">{reviewData.records.map((review) => <figure className="review-card" key={`${review.name}-${review.headline}`}><blockquote><strong>{review.headline}</strong><p>“{review.body}”</p></blockquote><figcaption><b>{review.name}</b><span>{review.detail}</span></figcaption></figure>)}</div></div></div>
+    <PageHero eyebrow="Contact Us" title="Bring order to the HR queue that keeps pulling you back in." description="Tell us which recurring workflow needs clearer coordination. We will discuss the inputs, access, review owner, and decision boundaries before shaping a role." image="/thumbnails/october-12/candidate-communication-template-governance.webp" imageAlt="Illustrated candidate communication workflow with approved templates and review points"/>
+    <section className="contact-fold"><div className="contact-intro"><div className="scope-labels"><span>Focused role design</span><span>Human review</span><span>Clear escalation</span></div><div className="review-heading"><strong>StealthAgents reviews</strong><span>First-party StealthAgents client comments</span></div><div className="review-window" aria-label="StealthAgents client comments" tabIndex={0}><div className="review-track">{reviewData.records.map((review) => <figure className="review-card" key={`${review.name}-${review.headline}`}><blockquote><strong>{review.headline}</strong><p>“{review.body}”</p></blockquote><figcaption><b>{review.name}</b><span>{review.detail}</span></figcaption></figure>)}</div></div></div>
       <div className="contact-form-card"><h2>Start a useful conversation</h2><p>Share operating context only. Do not include employee identities, credentials, medical details, complaints, or other sensitive information.</p><LeadForm source="contact-page-consultation"/></div>
     </section>
 

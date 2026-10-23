@@ -1,4 +1,12 @@
-export type Service = { slug: string; name: string; short: string; tasks: string[]; heroImage: string; heroAlt: string };
+export type ServiceSlug =
+  | 'employee-onboarding-support'
+  | 'interview-scheduling'
+  | 'employee-records'
+  | 'training-administration'
+  | 'policy-acknowledgments'
+  | 'people-operations-reporting';
+
+export type Service = { slug: ServiceSlug; name: string; short: string; tasks: string[]; heroImage: string; heroAlt: string };
 export type BlogPost = { slug: string; title: string; description: string; category: string; publishedAt: string; readTime: string; thumbnail?: string; sections: { heading: string; paragraphs: string[] }[]; faq: { q: string; a: string }[]; internalService: string; internalSibling: string; source: { label: string; url: string } };
 export type ResearchPost = { slug: string; title: string; summary: string; cluster: string; publishedAt: string; finding: string; thumbnail?: string; methodology?: string; sections?: { heading: string; paragraphs: string[] }[]; faq?: { q: string; a: string }[]; sources: { label: string; url: string }[] };
 export type SiteConfig = {

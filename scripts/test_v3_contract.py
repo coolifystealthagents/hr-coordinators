@@ -15,6 +15,141 @@ def text(path: str) -> str:
 
 
 class V3ContractTests(unittest.TestCase):
+    def test_shared_page_hero_is_reused_with_first_party_media_and_alt_text(self) -> None:
+        component_path = ROOT / "components/PageHero.tsx"
+        self.assertTrue(component_path.is_file(), "components/PageHero.tsx must provide the shared page hero")
+        hero = text("components/PageHero.tsx")
+        self.assertRegex(hero, r"\{\s*image:\s*string;\s*imageAlt:\s*string\s*\}")
+        self.assertRegex(hero, r"\{\s*image\?:\s*never;\s*imageAlt\?:\s*never\s*\}")
+        self.assertRegex(hero, r"image\s*===\s*undefined")
+        self.assertRegex(hero, r"\{\s*src:\s*site\.heroImage,\s*alt:\s*site\.heroAlt\s*\}")
+        self.assertRegex(hero, r"\{\s*src:\s*image,\s*alt:\s*imageAlt\s*\}")
+        self.assertRegex(hero, r"<Image\b[^>]*\bsrc=\{media\.src\}[^>]*\balt=\{media\.alt\}")
+
+        for path in ("app/services/page.tsx", "app/about/page.tsx", "app/contact-us/page.tsx"):
+            source = text(path)
+            self.assertIn("@/components/PageHero", source, path)
+            invocation = re.search(r"<PageHero\b(.*?)(?:/>|>)", source, re.DOTALL)
+            self.assertIsNotNone(invocation, path)
+            props = invocation.group(1)
+            image = re.search(r'\bimage=["\'](/[^"\']+)["\']', props)
+            image_alt = re.search(r'\bimageAlt=["\']([^"\']{12,})["\']', props)
+            self.assertIsNotNone(image, f"{path} must pass a first-party PageHero image")
+            self.assertIsNotNone(image_alt, f"{path} must pass meaningful PageHero alt text")
+
+    def test_service_details_cover_every_authoritative_service_with_real_data(self) -> None:
+        details_path = ROOT / "lib/service-details.ts"
+        self.assertTrue(details_path.is_file(), "lib/service-details.ts must hold service-specific detail data")
+        details = text("lib/service-details.ts")
+        types = text("lib/types.ts")
+        self.assertIn("export type ServiceSlug =", types)
+        self.assertIn("Record<ServiceSlug, ServiceDetail>", details)
+        expected_slugs = {
+            "employee-onboarding-support",
+            "interview-scheduling",
+            "employee-records",
+            "training-administration",
+            "policy-acknowledgments",
+            "people-operations-reporting",
+        }
+        declared_slugs = re.findall(r"^\s*['\"]([a-z0-9-]+)['\"]\s*:\s*\{", details, re.MULTILINE)
+        self.assertEqual(set(declared_slugs), expected_slugs)
+        self.assertEqual(len(declared_slugs), len(expected_slugs), "service detail records must not be duplicated")
+
+        shared_controls = re.search(r"\bsharedControls\s*=\s*\[(.*?)\]", details, re.DOTALL)
+        if shared_controls:
+            self.assertRegex(shared_controls.group(1), r"['\"][^'\"]+['\"]")
+
+        for slug in expected_slugs:
+            start = details.find(f"'{slug}':")
+            if start < 0:
+                start = details.find(f'"{slug}":')
+            self.assertGreaterEqual(start, 0, slug)
+            next_records = [
+                position for other in expected_slugs
+                if other != slug
+                for position in (details.find(f"'{other}':", start + 1), details.find(f'"{other}":', start + 1))
+                if position >= 0
+            ]
+            record = details[start:min(next_records) if next_records else len(details)]
+            for field in ("audience", "inputs", "deliverables", "boundaries"):
+                array = re.search(rf"\b{field}\s*:\s*\[(.*?)\]", record, re.DOTALL)
+                self.assertIsNotNone(array, f"{slug}.{field} must be an array")
+                self.assertRegex(array.group(1), r"['\"][^'\"]+['\"]", f"{slug}.{field} must not be empty")
+            controls = re.search(r"\bcontrols\s*:\s*(\[[^\]]*\]|[A-Za-z_$][\w$]*)", record, re.DOTALL)
+            self.assertIsNotNone(controls, f"{slug}.controls must contain quality controls")
+            control_value = controls.group(1)
+            if control_value.startswith("["):
+                control_data = control_value
+            else:
+                declaration = re.search(rf"\b{re.escape(control_value)}\s*=\s*\[(.*?)\]", details, re.DOTALL)
+                self.assertIsNotNone(declaration, f"{slug}.controls must reference an existing array")
+                control_data = declaration.group(1)
+            self.assertRegex(control_data, r"['\"][^'\"]+['\"]", f"{slug}.controls must not be empty")
+
+            scenarios = re.search(r"\bscenarios\s*:\s*\[(.*?)\]", record, re.DOTALL)
+            faq = re.search(r"\bfaq\s*:\s*\[(.*?)\]", record, re.DOTALL)
+            self.assertIsNotNone(scenarios, f"{slug}.scenarios must be an array")
+            self.assertIsNotNone(faq, f"{slug}.faq must be an array")
+            scenario_data = scenarios.group(1)
+            faq_data = faq.group(1)
+            self.assertGreaterEqual(len(re.findall(r"\btitle\s*:\s*['\"][^'\"]+['\"]", scenario_data)), 3, slug)
+            self.assertGreaterEqual(len(re.findall(r"\bcopy\s*:\s*['\"][^'\"]+['\"]", scenario_data)), 3, slug)
+            self.assertGreaterEqual(len(re.findall(r"\bq\s*:\s*['\"][^'\"]+['\"]", faq_data)), 3, slug)
+            self.assertGreaterEqual(len(re.findall(r"\ba\s*:\s*['\"][^'\"]+['\"]", faq_data)), 3, slug)
+
+    def test_page_hero_pairs_custom_media_with_its_alt_text(self) -> None:
+        hero = text("components/PageHero.tsx")
+        self.assertRegex(hero, r"image:\s*string;\s*imageAlt:\s*string")
+        self.assertRegex(hero, r"image\?:\s*never;\s*imageAlt\?:\s*never")
+
+    def test_service_page_consumes_detail_data_and_keeps_authoritative_media_metadata(self) -> None:
+        service = text("app/services/[slug]/page.tsx")
+        self.assertIn("@/lib/service-details", service)
+        self.assertRegex(service, r"if\s*\(\s*!service\s*\)\s*notFound\(\)")
+        self.assertRegex(service, r"serviceDetails\s*\[\s*service\.slug\s*\]")
+        for field in ("audience", "inputs", "deliverables", "controls", "boundaries", "scenarios", "faq"):
+            self.assertRegex(service, rf"detail\.{field}\.map\(", field)
+        self.assertIn("service.heroImage", service)
+        self.assertIn("service.heroAlt", service)
+        metadata = service.split("export default", 1)[0]
+        self.assertIn("title: service.name", metadata)
+        self.assertIn("description: service.short", metadata)
+        self.assertIn("alternates:", metadata)
+        self.assertIn("canonical:", metadata)
+        self.assertRegex(metadata, r"openGraph\s*:\s*\{[^}]*service\.heroImage")
+
+    def test_active_section_remains_the_accessible_article_navigator(self) -> None:
+        active_section = text("components/ActiveSection.tsx")
+        self.assertIn('aria-label="On this page"', active_section)
+        self.assertRegex(
+            active_section,
+            r"aria-current=\{active\s*===\s*item\.id\s*\?\s*['\"](?:location|page|step|true)['\"]\s*:\s*undefined\}",
+        )
+        for path in ("app/blog/[slug]/page.tsx", "app/research/[slug]/page.tsx"):
+            source = text(path)
+            self.assertIn("@/components/ActiveSection", source, path)
+            self.assertIn("<ActiveSection items={toc}", source, path)
+            self.assertNotIn("ArticleNavigator", source, path)
+
+    def test_warm_connected_visual_system_is_responsive_and_motion_safe(self) -> None:
+        css = text("app/globals.css")
+        root = re.search(r":root\s*\{([^}]+)\}", css, re.DOTALL)
+        self.assertIsNotNone(root)
+        self.assertRegex(root.group(1), r"--(?:paper|canvas)\s*:")
+        self.assertRegex(root.group(1), r"--(?:wine|burgundy|primary)\s*:")
+        self.assertRegex(css, r"(?:page-hero|hero)[^{]*\{[^}]*\}")
+        self.assertRegex(css, r"(?:clip-path|border-radius)\s*:")
+        self.assertRegex(css, r"\.thread\s+li\s*\{[^}]*border-left", "workflow stages need a connected marker")
+        self.assertRegex(css, r"\.thread\s+li:before\s*\{[^}]*(?:border-radius|clip-path)", "workflow stages need visible nodes")
+        self.assertRegex(
+            css,
+            r"\.service-hero\s*>\s*img\s*\{[^}]*object-fit\s*:\s*contain",
+            "text-bearing service artwork must remain fully visible at tablet widths",
+        )
+        self.assertRegex(css, r"@media\s*\(max-width\s*:")
+        self.assertRegex(css, r"@media\s*\(prefers-reduced-motion\s*:\s*reduce\)")
+
     def test_global_chrome_has_exact_navigation_and_parent_attribution(self) -> None:
         chrome = text("components/SiteChrome.tsx")
         content = text("lib/content.ts")
