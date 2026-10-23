@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ActiveSection } from '@/components/ActiveSection';
+import { MobileToc } from '@/components/MobileToc';
 import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
 import type { ResearchPost } from '@/lib/types';
@@ -123,8 +124,9 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   ];
 
   return <main id="main-content">
-    <header className="article-hero research-hero"><div><p className="eyebrow">{post.cluster} {isReviewPlan ? 'workflow review plan' : 'research brief'}</p><h1>{post.title}</h1><p className="dek">{post.summary}</p><p className="meta">{site.name} Editorial Team · Published {post.publishedAt}</p></div><Image src={image} alt={`Research illustration for ${post.title}`} width={1200} height={630} priority /></header>
+    <header className="article-hero research-hero"><div><p className="eyebrow">{post.cluster} {isReviewPlan ? 'workflow review plan' : 'research brief'}</p><h1>{post.title}</h1><p className="dek">{post.summary}</p><p className="meta">{site.name} Editorial Team · <time dateTime={post.publishedAt}>{`Published ${new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${post.publishedAt}T00:00:00Z`))}`}</time></p></div><Image src={image} alt={`Research illustration for ${post.title}`} width={1200} height={630} priority /></header>
     <section className="article-layout content-wrap">
+      <MobileToc items={toc}/>
       <article className="article-body">
         <p className="research-finding"><strong>{isReviewPlan ? 'Planning premise:' : 'Central finding:'}</strong> {post.finding}</p>
         {bodySections.map((section) => <section key={section.heading} id={slugify(section.heading)}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
