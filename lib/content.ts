@@ -5,6 +5,8 @@ import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
 import { october22ResearchPosts } from './october22-research';
 import { october25BlogPosts as oct25b, october25ResearchPosts as oct25r } from './october25-batch';
+import { october26BlogPosts } from './october26-blog';
+import { october26ResearchPosts } from './october26-research';
 
 const legacyBlogPosts: BlogPost[] = [
   {
@@ -916,8 +918,8 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
-export const researchPosts: ResearchPost[] = [...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
+export const blogPosts: BlogPost[] = [...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
+export const researchPosts: ResearchPost[] = [...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
 
 export const nav = [
   { href: '/', label: 'Home' },
