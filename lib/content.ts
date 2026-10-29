@@ -7,6 +7,8 @@ import { october22ResearchPosts } from './october22-research';
 import { october25BlogPosts as oct25b, october25ResearchPosts as oct25r } from './october25-batch';
 import { october26BlogPosts } from './october26-blog';
 import { october26ResearchPosts } from './october26-research';
+import { october28BlogPosts } from './october28-blog';
+import { october28ResearchPosts } from './october28-research';
 import { october27BlogPosts } from './october27-blog';
 import { october27ResearchPosts } from './october27-research';
 
@@ -920,8 +922,8 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...october27BlogPosts, ...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
-export const researchPosts: ResearchPost[] = [...october27ResearchPosts, ...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
+export const blogPosts: BlogPost[] = [...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts];
+export const researchPosts: ResearchPost[] = [...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts];
 
 export const nav = [
   { href: '/', label: 'Home' },
