@@ -64,7 +64,27 @@ export const november04BlogPosts = [
           "If the same new-hire onboarding checklists defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the new-hire onboarding checklists review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on check a new-hire onboarding checklist before the first day?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/employee-onboarding-support",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-keep-interview-feedback-comparable-across-coordinators",
@@ -131,7 +151,27 @@ export const november04BlogPosts = [
           "If the same interview feedback comparability defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the interview feedback comparability review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on keep interview feedback comparable across coordinators?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/interview-scheduling",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-track-a-background-check-without-exposing-the-result",
@@ -198,7 +238,27 @@ export const november04BlogPosts = [
           "If the same background check tracking defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the background check tracking review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on track a background check without exposing the result?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-prepare-an-employee-file-audit-pack-with-source-dates",
@@ -265,7 +325,27 @@ export const november04BlogPosts = [
           "If the same employee file audit packs defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the employee file audit packs review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on prepare an employee file audit pack with source dates?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-coordinate-a-leave-request-handoff-without-losing-the-date",
@@ -332,7 +412,27 @@ export const november04BlogPosts = [
           "If the same leave request handoffs defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the leave request handoffs review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on coordinate a leave request handoff without losing the date?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/training-administration",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-review-a-people-report-before-it-reaches-leadership",
@@ -399,7 +499,27 @@ export const november04BlogPosts = [
           "If the same people report reviews defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the people report reviews review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on review a people report before it reaches leadership?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/people-operations-reporting",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-record-a-policy-acknowledgement-as-evidence-not-a-checkbox",
@@ -466,7 +586,27 @@ export const november04BlogPosts = [
           "If the same policy acknowledgement evidence defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the policy acknowledgement evidence review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on record a policy acknowledgement as evidence, not a checkbox?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/policy-acknowledgments",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "hrcoordinators-close-an-employee-offboarding-checklist-with-access-proof",
@@ -533,6 +673,26 @@ export const november04BlogPosts = [
           "If the same offboarding checklists defect appears twice, change the template or the source before coaching the person again. Remove unused fields so the record stays short enough to complete under pressure. Keep the review note with the process change it produced. At HR Coordinators, the offboarding checklists review is repeated on a fixed date."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on close an employee offboarding checklist with access proof?",
+        "a": "Start with the source record and the named owner. The coordinator records the source in the approved HR system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes pay, access, policy, or an employee commitment. The coordinator prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/employee-records",
+    "internalSibling": "/blog/hrcoordinators-map-the-employee-onboarding-decision-to-one-accountable-owner-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   }
 ];
