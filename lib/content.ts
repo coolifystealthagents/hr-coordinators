@@ -932,8 +932,8 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
-export const researchPosts: ResearchPost[] = [...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
+export const blogPosts: BlogPost[] = [...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
+export const researchPosts: ResearchPost[] = [...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
 
 export const nav = [
   { href: '/', label: 'Home' },
