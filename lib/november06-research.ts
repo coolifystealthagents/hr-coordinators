@@ -56,6 +56,24 @@ export const november06ResearchPosts = [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the first-day packet completeness review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -114,6 +132,24 @@ export const november06ResearchPosts = [
         "paragraphs": [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the referral bonus approval coverage review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   },
@@ -174,6 +210,24 @@ export const november06ResearchPosts = [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the leave balance transfer reproducibility review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -232,6 +286,24 @@ export const november06ResearchPosts = [
         "paragraphs": [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the improvement plan review aging review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   },
@@ -292,6 +364,24 @@ export const november06ResearchPosts = [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the adjudication record completeness review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -351,6 +441,24 @@ export const november06ResearchPosts = [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the remote agreement currency review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -409,6 +517,24 @@ export const november06ResearchPosts = [
         "paragraphs": [
           "Review the result on a fixed date and end with one process change, one owner, and one check date. A repeated defect should change the template, source, or rule before it changes the coaching message. At HR Coordinators, the requisition headcount alignment review is repeated with the same sample rule. Keep the review note with the change it produced."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   }
