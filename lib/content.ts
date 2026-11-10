@@ -4,6 +4,7 @@ import { november02BlogPosts } from './november02-blog';
 import { november03BlogPosts } from './november03-blog';
 import { november04BlogPosts } from './november04-blog';
 import { november06BlogPosts } from './november06-blog';
+import { november10BlogPosts } from './november10-blog';
 import { november09BlogPosts } from './november09-blog';
 import { november08BlogPosts } from './november08-blog';
 import { november07BlogPosts } from './november07-blog';
@@ -12,6 +13,7 @@ import { november02ResearchPosts } from './november02-research';
 import { november03ResearchPosts } from './november03-research';
 import { november04ResearchPosts } from './november04-research';
 import { november06ResearchPosts } from './november06-research';
+import { november10ResearchPosts } from './november10-research';
 import { november09ResearchPosts } from './november09-research';
 import { november08ResearchPosts } from './november08-research';
 import { november07ResearchPosts } from './november07-research';
@@ -940,10 +942,12 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...november09BlogPosts,
+export const blogPosts: BlogPost[] = [...november10BlogPosts,
+  ...november09BlogPosts,
   ...november08BlogPosts,
   ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...november01BlogPosts, ...october28BlogPosts, ...october27BlogPosts, ...october26BlogPosts, ...oct25b, ...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
-export const researchPosts: ResearchPost[] = [...november09ResearchPosts,
+export const researchPosts: ResearchPost[] = [...november10ResearchPosts,
+  ...november09ResearchPosts,
   ...november08ResearchPosts,
   ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...november01ResearchPosts, ...october28ResearchPosts, ...october27ResearchPosts, ...october26ResearchPosts, ...oct25r, ...october22ResearchPosts, ...october12ResearchPosts, ...legacyResearchPosts].sort((a,b)=>String(b.publishedAt).localeCompare(String(a.publishedAt)));
 
