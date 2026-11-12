@@ -1,0 +1,55 @@
+{
+  "theme": "hr",
+  "shortBrand": "HR Coordinators",
+  "ctaText": "Thoughtful coordination for the everyday work around your employees. Keep onboarding, interviews, records, and training connected while your HR leaders focus on the people who need them.",
+  "blog": {
+    "title": "Practical ideas for thoughtful people operations.",
+    "intro": "Explore practical guides for HR Coordinators workflows, role planning, and day-to-day coordination.",
+    "image": "/refresh-20261112/blog.webp",
+    "alt": "Smiling coworkers engage in a productive meeting at a modern office, fostering teamwork and creativity.",
+    "caption": "More room for people.",
+    "ribbon": "People operations, thoughtfully supported",
+    "search": "Search by topic or workflow",
+    "guideTitle": "Turn a useful idea into a practical next step.",
+    "guides": [
+      {
+        "title": "Start with your context",
+        "text": "Compare the workflow in the article with the systems, responsibilities, and review process your team uses."
+      },
+      {
+        "title": "Read the source",
+        "text": "Research links provide the original context. Check dates, scope, and applicability before relying on a conclusion."
+      },
+      {
+        "title": "Make the handoff specific",
+        "text": "Use your notes to define an input, an output, and the person who will review the work."
+      }
+    ],
+    "cta": "Let\u2019s make more room for your people."
+  },
+  "research": {
+    "title": "Better questions. More considered HR.",
+    "intro": "Source-led briefs to help you examine operating practices, understand boundaries, and ask more useful questions.",
+    "image": "/refresh-20261112/research.webp",
+    "alt": "Professionals in a meeting room engaged in a collaborative business discussion.",
+    "caption": "More room for people.",
+    "ribbon": "People operations, thoughtfully supported",
+    "search": "Search by topic or workflow",
+    "guideTitle": "Turn a useful idea into a practical next step.",
+    "guides": [
+      {
+        "title": "Start with your context",
+        "text": "Compare the workflow in the article with the systems, responsibilities, and review process your team uses."
+      },
+      {
+        "title": "Read the source",
+        "text": "Research links provide the original context. Check dates, scope, and applicability before relying on a conclusion."
+      },
+      {
+        "title": "Make the handoff specific",
+        "text": "Use your notes to define an input, an output, and the person who will review the work."
+      }
+    ],
+    "cta": "Let\u2019s make more room for your people."
+  }
+}

@@ -1,17 +1,4 @@
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { site } from '@/lib/site';
-import { ArrowIcon } from '@/components/Icons';
-import { PageHero } from '@/components/PageHero';
+import {ServicesExperience} from '../refresh-experience';
 
-export const metadata: Metadata = { title: 'HR coordination services', description: 'Explore focused HR coordination support for onboarding, interviews, records, training, policies, and reporting.', alternates: { canonical: '/services' } };
-
-export default function ServicesPage() {
-  return <main id="main-content"><PageHero eyebrow="HR coordination services" title="Give recurring people work a clear owner and handoff." description="Choose a focused queue, define the approved inputs, and give HR leadership a reviewable output without transferring employment judgment." image="/thumbnails/october-12/leave-request-routing-boundaries.webp" imageAlt="Illustrated HR request routing between calendar, document, and review owners"><Link className="button primary" href="/contact-us">Discuss your workflow</Link></PageHero>
-    <section className="content-wrap services-directory"><div className="section-heading"><p className="eyebrow">The service collection</p><h2>Six places to restore a steady rhythm.</h2><p>Each engagement starts narrowly enough to document, test, and review. The service page explains what enters the queue, what the coordinator prepares, and what stays with your team.</p></div>{site.services.map((service) => <Link className="service-feature" href={`/services/${service.slug}`} key={service.slug}><Image src={service.heroImage} alt={service.heroAlt} width={1200} height={630}/><div><h2>{service.name}</h2><p>{service.short}</p><ul>{service.tasks.slice(0,3).map((task) => <li key={task}>{task}</li>)}</ul><span className="text-link">Review scope and boundaries <ArrowIcon/></span></div></Link>)}</section>
-    <section className="section decision-guide"><div><p className="eyebrow">Where to begin</p><h2>Choose a workflow, not a vague job title.</h2></div><div><p>A useful first workflow repeats often, has an identifiable source, and already belongs to an accountable leader. Avoid starting with unresolved policy, sensitive employee relations, or a queue that has no acceptance standard.</p><h3>Bring to the role-design conversation</h3><ul><li>The current request channel and source systems</li><li>The person who reviews and approves completion</li><li>Examples of normal work and exceptions</li><li>Access limits and communication rules</li></ul></div></section>
-    <section className="section faq-block"><h2>Questions before you choose</h2><details><summary>Can several services be combined?</summary><p>Yes, after the first workflow is stable. Related queues can share a coordinator when access, volume, review ownership, and priorities are explicit.</p></details><details><summary>What should not be delegated?</summary><p>Employment decisions, legal interpretation, compensation, classification, investigations, sensitive conversations, and policy approval stay with authorized leaders.</p></details><details><summary>How is quality checked?</summary><p>Your team defines the acceptance checklist. Review a focused sample, examine recurring exceptions, and update the written process before expanding scope.</p></details></section>
-    <section className="closing"><h2>Which queue needs a more reliable handoff?</h2><p>Bring the work as it operates today. We will help turn it into a focused support brief.</p><Link className="button primary" href="/contact-us">Plan a free consultation</Link></section>
-  </main>;
-}
+export const metadata={title:'Services',description:"Choose support for the recurring details that shape your employee experience. Clear ownership and careful follow-through give HR leaders a more dependable operating rhythm.",alternates:{canonical:'/services'}};
+export default function Page(){return <><main id="main-content"><ServicesExperience/></main></>}
