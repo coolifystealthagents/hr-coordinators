@@ -82,7 +82,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a leave of absence return packet case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the leave record value."
+        "a": "The HR manager owns the return decision, the assistant attaches leave dates and the dated approval line, and the close note records who verified the value in the leave record."
       }
     ],
     "internalService": "/services/employee-records",
@@ -174,7 +174,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a performance review cycle reminder case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the review tracker value."
+        "a": "The HR coordinator owns the review-cycle decision, the assistant attaches the dated reminder and the tracker export, and the close note records who confirmed the reminder reached the right owner."
       }
     ],
     "internalService": "/services/people-operations-reporting",
@@ -266,7 +266,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a remote work agreement case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the policy register value."
+        "a": "The HR manager owns the remote-work decision, the assistant attaches the signed agreement and work location, and the close note records who confirmed the current policy register value."
       }
     ],
     "internalService": "/services/policy-acknowledgments",
@@ -358,7 +358,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a tuition assistance payment request case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the reimbursement register value."
+        "a": "The HR coordinator owns the tuition decision, the assistant attaches course approval and the receipt, and the close note records who confirmed the reimbursement register value before payment."
       }
     ],
     "internalService": "/services/employee-records",
@@ -450,7 +450,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a referral bonus eligibility case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the bonus register value."
+        "a": "The HR manager owns the referral-bonus decision, the assistant attaches the referral form and hire date, and the close note records who confirmed the bonus register value."
       }
     ],
     "internalService": "/services/payroll-support",
@@ -542,7 +542,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a disciplinary action documentation case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the employee relations file value."
+        "a": "The HR manager owns the disciplinary decision, the assistant attaches the dated meeting notes and the policy reference, and the close note records who confirmed the employee relations file value."
       }
     ],
     "internalService": "/services/employee-records",
@@ -634,7 +634,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a job description version record case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the role register value."
+        "a": "The HR coordinator owns the job-description decision, the assistant attaches the version history and approval date, and the close note records who confirmed the current role register value."
       }
     ],
     "internalService": "/services/people-operations-reporting",
@@ -726,7 +726,7 @@ export const november22BlogPosts: BlogPost[] = [
       },
       {
         "q": "What closes a training completion transcript case?",
-        "a": "A named owner, the source record, the decision, and the confirmed the training register value."
+        "a": "The HR coordinator owns the training completion decision, the assistant attaches the transcript and course date, and the close note records who confirmed the training register value."
       }
     ],
     "internalService": "/services/training-administration",
