@@ -3,7 +3,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-audit-a-leave-donation-request",
     "title": "Audit a leave donation request",
-    "description": "A bounded operational guide to leave donation request, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to leave donation request, with explicit evidence, decision rights, and a verified close.",
     "category": "Leave control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -94,7 +94,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-control-a-performance-bonus-proration-record",
     "title": "Control a performance bonus proration record",
-    "description": "A bounded operational guide to bonus proration record, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to bonus proration record, with explicit evidence, decision rights, and a verified close.",
     "category": "Compensation control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -185,7 +185,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-verify-an-employee-handbook-acknowledgment",
     "title": "Verify an employee handbook acknowledgment",
-    "description": "A bounded operational guide to handbook acknowledgment, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to handbook acknowledgment, with explicit evidence, decision rights, and a verified close.",
     "category": "Policy control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -276,7 +276,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-reconcile-a-contractor-conversion-record",
     "title": "Reconcile a contractor conversion record",
-    "description": "A bounded operational guide to contractor conversion, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to contractor conversion, with explicit evidence, decision rights, and a verified close.",
     "category": "Conversion control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -367,7 +367,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-audit-a-workplace-accommodation-request-log",
     "title": "Audit a workplace accommodation request log",
-    "description": "A bounded operational guide to accommodation request log, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to accommodation request log, with explicit evidence, decision rights, and a verified close.",
     "category": "Accommodation control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -458,7 +458,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-control-a-separation-checklist",
     "title": "Control a separation checklist",
-    "description": "A bounded operational guide to separation checklist, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to separation checklist, with explicit evidence, decision rights, and a verified close.",
     "category": "Separation control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -549,7 +549,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-verify-a-background-check-adjudication-note",
     "title": "Verify a background check adjudication note",
-    "description": "A bounded operational guide to background adjudication, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to background adjudication, with explicit evidence, decision rights, and a verified close.",
     "category": "Background control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",
@@ -640,7 +640,7 @@ export const november24BlogPosts: BlogPost[] = [
   {
     "slug": "hrcoordinators-reconcile-an-unemployment-claim-response",
     "title": "Reconcile an unemployment claim response",
-    "description": "A bounded operational guide to unemployment claim response, with explicit evidence, decision rights, and a verified close.",
+    "description": "An HR coordination guide to unemployment claim response, with explicit evidence, decision rights, and a verified close.",
     "category": "Claims control",
     "publishedAt": "2026-11-24",
     "readTime": "9 min read",

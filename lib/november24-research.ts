@@ -3,7 +3,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-leave-donation-policy-coverage",
     "title": "Leave donation policy coverage",
-    "summary": "A measurement protocol for leave donation coverage, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for leave donation coverage, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Leave operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of leave donation coverage records missing a required field, reported with its window and exclusions.",
@@ -84,7 +84,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-bonus-proration-plan-match",
     "title": "Bonus proration plan match",
-    "summary": "A measurement protocol for bonus proration match, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for bonus proration match, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Compensation operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of bonus proration match records missing a required field, reported with its window and exclusions.",
@@ -165,7 +165,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-handbook-acknowledgment-currency",
     "title": "Handbook acknowledgment currency",
-    "summary": "A measurement protocol for handbook acknowledgment currency, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for handbook acknowledgment currency, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Policy operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of handbook acknowledgment currency records missing a required field, reported with its window and exclusions.",
@@ -246,7 +246,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-contractor-conversion-approval-rate",
     "title": "Contractor conversion approval rate",
-    "summary": "A measurement protocol for conversion approval rate, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for conversion approval rate, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Conversion operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of conversion approval rate records missing a required field, reported with its window and exclusions.",
@@ -327,7 +327,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-accommodation-interactive-note-rate",
     "title": "Accommodation interactive note rate",
-    "summary": "A measurement protocol for accommodation note rate, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for accommodation note rate, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Accommodation operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of accommodation note rate records missing a required field, reported with its window and exclusions.",
@@ -408,7 +408,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-separation-access-removal-rate",
     "title": "Separation access removal rate",
-    "summary": "A measurement protocol for separation access rate, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for separation access rate, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Separation operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of separation access rate records missing a required field, reported with its window and exclusions.",
@@ -489,7 +489,7 @@ export const november24ResearchPosts: ResearchPost[] = [
   {
     "slug": "hrcoordinators-background-adjudication-matrix-match",
     "title": "Background adjudication matrix match",
-    "summary": "A measurement protocol for adjudication matrix match, with a frozen population, an evidence sample, and a dated review.",
+    "summary": "An HR measurement note for adjudication matrix match, with a frozen population, an evidence sample, and a dated review.",
     "cluster": "Background operations",
     "publishedAt": "2026-11-24",
     "finding": "A reproducible count of adjudication matrix match records missing a required field, reported with its window and exclusions.",
